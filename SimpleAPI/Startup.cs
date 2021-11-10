@@ -49,6 +49,8 @@ namespace SimpleAPI
 
             app.UseAuthorization();
 
+            app.UseHttpsRedirection();
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
